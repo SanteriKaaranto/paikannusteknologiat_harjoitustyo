@@ -2,27 +2,25 @@ Reactilla ja Node Expressillä toteutettu sovellus, joka näyttää tankkausasem
 
 <br>
 
-Käynnistäeksesi projektin tarvitset koneellesi Node.js/npm
+#### Toiminta yksinkertaiseti:
+
+> Sovellus piirtää selaimeen kartan käyttäen leaflet kirjastoa.
+>
+>  Sovellus ottaa tankkausasemien dataa palvelimelta polusta '/api/gas_stations' ja luo niistä merkit kartalle.
+
+<br>
+
+#### Sovelluksen käynnistäminen
+
+Tarvitset koneellesi [Node.js](https://nodejs.org/en/download)
+
+<br>
 
 Node moduulien lisäys projektiin
 
-> cd server
+> aja 'npm install' '/client' ja '/server' poluissa
 
-> npm install
-
-&
-
-> cd client
-
-> npm install
+<br>
 
 Sovelluksen käynnistäminen
-> cd server
-
-> npm start
-
-&
-
-> cd client
-
-> npm start
+> aja 'npm start' '/client' ja '/server' poluissa
