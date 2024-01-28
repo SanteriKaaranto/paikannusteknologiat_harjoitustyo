@@ -1,4 +1,4 @@
--- Create the gas_stations table
+
 CREATE TABLE IF NOT EXISTS gas_stations (
     id INTEGER PRIMARY KEY,
     addr TEXT NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS gas_stations (
     lon REAL NOT NULL
 );
 
--- Insert data into the gas_stations table
+-- Data geocoodattu käyttäen googlen apia
 INSERT INTO gas_stations (addr, corp, fuel_95E10, fuel_98E, fuel_Di, lat, lon) VALUES
     ('Ruukintie 177, 60200 Seinajoki, Finland', 'ABC', 2.106, 2.200, 2.148, 62.75269170000001, 22.8661126),
     ('Hyllykalliontie 1, 60510 Seinajoki, Finland', 'St1', 2.149, 2.219, 2.379, 62.80566400000001, 22.880002),
