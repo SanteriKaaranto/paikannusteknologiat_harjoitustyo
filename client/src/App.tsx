@@ -2,8 +2,8 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-const App = () => {
-  const position = [62.78882825247504, 22.82214852702566]; // Initial map position
+const App: React.FC = () => {
+  const position: [number, number] = [62.78882825247504, 22.82214852702566]; 
 
   return (
     <MapContainer center={position} zoom={13} style={{ height: '100vh', width: '100%' }}>
@@ -21,4 +21,3 @@ const App = () => {
 };
 
 export default App;
-
