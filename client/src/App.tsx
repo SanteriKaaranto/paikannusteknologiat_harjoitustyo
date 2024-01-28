@@ -2,6 +2,10 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
+// Jotta marker iconit toimii reactin kanssa
+import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.webpack.css'; // Re-uses images from ~leaflet package
+import 'leaflet-defaulticon-compatibility';
+
 const App: React.FC = () => {
   const position: [number, number] = [62.78882825247504, 22.82214852702566]; 
 
@@ -13,7 +17,7 @@ const App: React.FC = () => {
       />
       <Marker position={position}>
         <Popup>
-          A sample marker located at {position[0]}, {position[1]}.
+          SeAMK.
         </Popup>
       </Marker>
     </MapContainer>
