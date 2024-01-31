@@ -38,6 +38,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
+    /* Leaflet kartta */
     <MapContainer
       center={position}
       zoom={13}

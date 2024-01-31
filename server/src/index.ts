@@ -1,12 +1,12 @@
 import express from 'express';
-import path from 'path';
 import sqlite3 from 'sqlite3';
 
 const app = express();
 app.use(express.json());
 
-const db = new sqlite3.Database('database.db'); // Adjust the path accordingly
+const db = new sqlite3.Database('database.db');
 
+// Get polku tankkausasemien tiedoille
 app.get("/api/gas_stations", (request, response) => {
   const query = 'SELECT * FROM gas_stations';
 
